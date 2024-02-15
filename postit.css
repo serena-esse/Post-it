@@ -1,0 +1,82 @@
+body {
+  font: 2rem "Indie Flower";
+}
+
+main {
+  background-color: #666666;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  justify-content: space-evenly;
+}
+
+main h2 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+main div {
+  padding: 2em;
+  margin: 0.6em;
+  box-shadow: 5px 2px 19px -2px #000000;
+  animation: ingrandisci 1s;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
+main div:nth-child(1) {
+  background-color: #fafbc9;
+  transform: rotate(-4deg);
+  animation-delay: 1s;
+}
+main div:nth-child(2) {
+  background-color: #c9fbca;
+  transform: rotate(4deg);
+  animation-delay: 2s;
+}
+
+main div:nth-child(3) {
+  background-color: #c4c5f0;
+  animation-delay: 3s;
+}
+main div:nth-child(4) {
+  background-color: #c9fbca;
+  transform: rotate(4deg);
+  animation-delay: 4s;
+}
+main div:nth-child(5) {
+  background-color: #fafbc9;
+  transform: rotate(-4deg);
+  animation-delay: 5s;
+}
+main div:nth-child(6) {
+  background-color: #c4c5f0;
+  transform: rotate(-4deg);
+  animation-delay: 6s;
+}
+main div:nth-child(7) {
+  background-color: #fafbc9;
+  transform: rotate(-7deg);
+  animation-delay: 7s;
+}
+main div:nth-child(8) {
+  background-color: #c9fbca;
+  transform: rotate(3deg);
+  animation-delay: 8s;
+}
+main div:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+  box-shadow: 5px 2px 19px -2px #000000;
+
+  cursor: pointer;
+}
+@keyframes ingrandisci {
+  0% {
+    transform: scale(8);
+  }
+  50% {
+    transform: scale(4);
+  }
+  to {
+    transform: scale(1);
+  }
+}
